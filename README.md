@@ -14,8 +14,14 @@ Nesta aplicação temos uma coleção de Games ordenadas por categorias, como av
 
 # Implantação em Produção
 - BackEnd e Banco de Dados: [RailWay](https://railway.app/ "Site Railway")
+## Testes em Produção
 
+Podem ser efetuados testes até o dia 01/06/2023 (tempo que a plataforma disponibiliza gratuitamente 500 horas) alterando os endpoints para o endereço abaixo:
+```
+https://dslist-production-4aed.up.railway.app
+```
 # EndPoints
+Podem ser importados no Postman através do arquivo DSList.postman_collection.json disponibilizado nesse projeto. 
 #### Buscar Jogos
 ```
 http://localhost:8080/games
@@ -41,6 +47,23 @@ Body:
     "sourceIndex": 3,
     "destinationIndex": 1
 }
+```
+# Como executar o Projeto
+```
+# Criar uma pasta para salvar o projeto
+mkdir /home/seunomeusuario/git
+
+# Acessar a pasta para salvar
+cd /home/seunomeusuario/git
+
+# Clonar repositório
+git clone https://github.com/mauricioinhaia/dslist.git
+
+# Acessar pasta para executar
+cd dslist
+
+# Executar o Projeto
+./mvnw spring-boot:run
 ```
 # Autor
 [Mauricio Inhaia](https://www.linkedin.com/feed/ "LinkedIn")
